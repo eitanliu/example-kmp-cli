@@ -55,6 +55,8 @@ kotlin {
         all {
             languageSettings.optIn("kotlin.ExperimentalStdlibApi")
             languageSettings.optIn("kotlin.experimental.ExperimentalNativeApi")
+            languageSettings.optIn("kotlin.native.runtime.NativeRuntimeApi")
+            languageSettings.optIn("kotlin.time.ExperimentalTime")
             // 2.1.2
             languageSettings.optIn("kotlin.concurrent.atomics.ExperimentalAtomicApi")
             languageSettings.optIn("kotlin.uuid.ExperimentalUuidApi")

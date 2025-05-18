@@ -17,12 +17,13 @@ import kotlin.coroutines.suspendCoroutine
 import kotlin.test.Test
 
 @Test
-fun testCoroutines() = runBlocking {
+fun main(): Unit = runBlocking {
 
     println()
-    val dispatcher = coroutineContext[CoroutineDispatcher]
+    val coroutine = this
     val job = coroutineContext[Job]
-    println("Context $dispatcher, $job")
+    val dispatcher = coroutineContext[CoroutineDispatcher]
+    println("Context $coroutine, $job, $dispatcher")
 
     val io = Dispatchers.IO
     val main = Dispatchers.Main

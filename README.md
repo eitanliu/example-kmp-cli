@@ -18,3 +18,9 @@ Windows
 ```shell
 gradlew runDebugExecutableMingwX64
 ```
+
+### Library
+
+[clikt](https://klibs.io/project/ajalt/clikt)  
+[mordant](https://klibs.io/project/ajalt/mordant)  
+[mosaic](https://klibs.io/project/JakeWharton/mosaic)  
