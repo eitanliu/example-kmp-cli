@@ -1,20 +1,25 @@
-@file:OptIn(ExperimentalKotlinGradlePluginApi::class)
+@file:OptIn(
+    org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class,
+)
 
 import org.gradle.internal.os.OperatingSystem
-import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.plugin.KotlinCompilation
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.kotlinxSerialization)
 }
+apply(from = rootProject.file("gradle/kmp_targets_all.gradle"))
+// apply(from = rootProject.file("gradle/kmp_targets_web.gradle"))
 
 group = "org.example.kmp.cli"
 version = "1.0.0"
+val jvmEnable = false
+val nativeEnable = true
 
 kotlin {
 
-    jvm {
+    if (jvmEnable) jvm {
         binaries {
             executable {
                 mainClass.set("MainKt")

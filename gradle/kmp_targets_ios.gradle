@@ -1,0 +1,7 @@
+plugins.withId('org.jetbrains.kotlin.multiplatform') {
+    kotlin {
+        iosSimulatorArm64()
+        iosX64()
+        iosArm64()
+    }
+}

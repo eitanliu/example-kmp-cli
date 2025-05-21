@@ -24,3 +24,7 @@ gradlew runDebugExecutableMingwX64
 [clikt](https://klibs.io/project/ajalt/clikt)  
 [mordant](https://klibs.io/project/ajalt/mordant)  
 [mosaic](https://klibs.io/project/JakeWharton/mosaic)  
+[DirectoryTree](https://klibs.io/project/Antimonit/DirectoryTree)  
+
+[multiplatform-paths](https://klibs.io/project/psuzn/multiplatform-paths)  
+[Kotlin-Multiplatform-AppDirs](https://klibs.io/project/Syer10/Kotlin-Multiplatform-AppDirs)  

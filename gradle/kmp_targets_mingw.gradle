@@ -1,0 +1,5 @@
+plugins.withId('org.jetbrains.kotlin.multiplatform') {
+    kotlin {
+        mingwX64()
+    }
+}

@@ -1,0 +1,7 @@
+plugins.withId('org.jetbrains.kotlin.multiplatform') {
+    kotlin {
+        js()
+        wasmJs()
+        wasmWasi()
+    }
+}

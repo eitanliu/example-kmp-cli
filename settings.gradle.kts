@@ -5,4 +5,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "example-kmp-cli"
+rootProject.name = "kmp-cli"
