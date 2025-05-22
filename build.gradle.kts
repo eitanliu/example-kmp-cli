@@ -9,7 +9,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.kotlinxSerialization)
 }
-apply(from = rootProject.file("gradle/kmp_targets_all.gradle"))
+apply(from = rootProject.file("gradle/kmp_targets_desktop.gradle"))
 // apply(from = rootProject.file("gradle/kmp_targets_web.gradle"))
 
 group = "org.example.kmp.cli"
@@ -53,7 +53,7 @@ kotlin {
             implementation(libs.kotlinx.serialization.json)
         }
 
-        jvmMain.dependencies {
+        if (jvmEnable) jvmMain.dependencies {
             implementation(libs.kotlinx.coroutines.swing)
         }
 
